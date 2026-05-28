@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background: #e9e9e9;
+
+    display: flex;
+}
+
+/* MENU LATERAL */
+
+.sidebar{
+    width: 250px;
+    height: 100vh;
+
+    background: #222;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    padding: 20px;
+
+    overflow-y: auto;
+}
+
+.sidebar h2{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    display: block;
+
+    text-decoration: none;
+    color: white;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    border-radius: 8px;
+
+    background: #333;
+
+    transition: 0.3s;
+}
+
+.sidebar a:hover{
+    background: #007bff;
+}
+
+/* CONTEÚDO */
+
+.conteudo{
+    margin-left: 270px;
+
+    width: calc(100% - 270px);
+
+    padding: 40px;
+}
+
+.conteudo h1{
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* CAIXAS */
+
+fieldset{
+    background: white;
+
+    padding: 20px;
+    margin-bottom: 30px;
+
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+legend{
+    font-size: 22px;
+    padding: 0 10px;
+    color: #333;
+}
+
+/* FORM */
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+input{
+    padding: 12px;
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+    margin-bottom: 10px;
+}
+
+button{
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #28a745;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #218838;
+}
+
+/* RESULTADO */
+
+.resultado{
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f7f7f7;
+
+    border-radius: 8px;
+}
+/* HEADER */
+
+header{
+    background: #c40000;
+    color: white;
+
+    padding: 20px;
+    text-align: center;
+}
+
+/* BOTÕES DE NAVEGAÇÃO */
+
+.botoesTopo{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 20px 40px;
+}
+
+.navegacao{
+    margin-top: 30px;
+}
+
+.navegacao a,
+.botoesTopo a{
+
+    text-decoration: none;
+
+    background: #28a745;
+    color: white;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.navegacao a:hover,
+.botoesTopo a:hover{
+
+    background: #218838;
+
+}
+
+.voltar{
+    background: #c40000 !important;
+}
+
+.voltar:hover{
+    background: #920000 !important;
+}
